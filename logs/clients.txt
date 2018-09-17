@@ -20,3 +20,47 @@
  2018-09-16 14:26:59.764981 192.168.0.103 - request served in 0:00:00 miliseconds
  2018-09-16 14:26:59.776955 192.168.0.103 - request served in 0:00:00.002001 miliseconds
  2018-09-16 14:26:59.781935 192.168.0.103 - request served in 0:00:00.000404 miliseconds
+ 2018-09-16 14:41:25.131826 192.168.0.103 - request served in 0:00:00.026890 miliseconds
+ 2018-09-16 14:41:26.024418 192.168.0.103 - request served in 0:00:00.006989 miliseconds
+ 2018-09-16 14:41:26.026404 192.168.0.103 - request served in 0:00:00 miliseconds
+ 2018-09-16 14:41:26.034431 192.168.0.103 - request served in 0:00:00.001047 miliseconds
+ 2018-09-16 14:41:26.042363 192.168.0.103 - request served in 0:00:00.001000 miliseconds
+ 2018-09-16 14:41:28.471207 192.168.0.103 - request served in 0:00:00 miliseconds
+ 2018-09-16 14:41:33.543203 192.168.0.103 - request served in 0:00:00.000852 miliseconds
+ 2018-09-16 14:41:33.594107 192.168.0.103 - request served in 0:00:00 miliseconds
+ 2018-09-16 14:41:33.613130 192.168.0.103 - request served in 0:00:00.000143 miliseconds
+ 2018-09-16 14:41:33.619968 192.168.0.103 - request served in 0:00:00 miliseconds
+ 2018-09-16 14:41:33.631226 192.168.0.103 - request served in 0:00:00.000288 miliseconds
+ 2018-09-16 14:41:39.338446 192.168.0.103 - request served in 0:00:00 miliseconds
+ 2018-09-16 14:41:39.411251 192.168.0.103 - request served in 0:00:00.000947 miliseconds
+ 2018-09-16 14:41:39.426211 192.168.0.103 - request served in 0:00:00.000998 miliseconds
+ 2018-09-16 14:41:39.437199 192.168.0.103 - request served in 0:00:00.001015 miliseconds
+ 2018-09-16 14:41:39.443164 192.168.0.103 - request served in 0:00:00 miliseconds
+ 2018-09-17 20:25:43.264014 192.168.0.103 - request served in 0:00:00.023402 miliseconds
+ 2018-09-17 20:25:44.328539 192.168.0.103 - request served in 0:00:00.005259 miliseconds
+ 2018-09-17 20:25:44.330015 192.168.0.103 - request served in 0:00:00.002469 miliseconds
+ 2018-09-17 20:25:44.328539 192.168.0.103 - request served in 0:00:00.002060 miliseconds
+ 2018-09-17 20:25:44.715348 192.168.0.103 - request served in 0:00:00 miliseconds
+ 2018-09-17 20:25:44.793034 192.168.0.103 - request served in 0:00:00 miliseconds
+ 2018-09-17 20:25:45.050874 192.168.0.103 - request served in 0:00:00 miliseconds
+ 2018-09-17 20:26:35.926372 192.168.0.103 - request served in 0:00:00 miliseconds
+ 2018-09-17 20:26:42.515202 192.168.0.103 - request served in 0:00:00.000999 miliseconds
+ 2018-09-17 20:26:42.572304 192.168.0.103 - request served in 0:00:00.001014 miliseconds
+ 2018-09-17 20:26:42.582395 192.168.0.103 - request served in 0:00:00.001003 miliseconds
+ 2018-09-17 20:26:42.597432 192.168.0.103 - request served in 0:00:00.000998 miliseconds
+ 2018-09-17 20:26:42.608974 192.168.0.103 - request served in 0:00:00.001874 miliseconds
+ 2018-09-17 20:32:22.711768 192.168.0.103 - request served in 0:00:00.025374 miliseconds
+ 2018-09-17 20:32:23.056192 192.168.0.103 - request served in 0:00:00.003727 miliseconds
+ 2018-09-17 20:32:23.057188 192.168.0.103 - request served in 0:00:00.000996 miliseconds
+ 2018-09-17 20:32:23.062632 192.168.0.103 - request served in 0:00:00 miliseconds
+ 2018-09-17 20:32:23.064467 192.168.0.103 - request served in 0:00:00.000837 miliseconds
+ 2018-09-17 20:48:40 192.168.0.103 - request served in 0:00:00.013831 miliseconds
+ 2018-09-17 20:48:41 192.168.0.103 - request served in 0:00:00.001996 miliseconds
+ 2018-09-17 20:48:41 192.168.0.103 - request served in 0:00:00.000891 miliseconds
+ 2018-09-17 20:48:41 192.168.0.103 - request served in 0:00:00 miliseconds
+ 2018-09-17 20:48:41 192.168.0.103 - request served in 0:00:00.000997 miliseconds
+ 2018-09-17 20:54:46 ('\x1b[38;5;1m', '\x1b[48;5;15m', '\x1b[0m') 192.168.0.103 - request served in 0:00:00.026856 miliseconds
+ 2018-09-17 20:54:46 ('\x1b[38;5;1m', '\x1b[48;5;15m', '\x1b[0m') 192.168.0.103 - request served in 0:00:00.018232 miliseconds
+ 2018-09-17 20:54:46 ('\x1b[38;5;1m', '\x1b[48;5;15m', '\x1b[0m') 192.168.0.103 - request served in 0:00:00.005254 miliseconds
+ 2018-09-17 20:54:46 ('\x1b[38;5;1m', '\x1b[48;5;15m', '\x1b[0m') 192.168.0.103 - request served in 0:00:00.000996 miliseconds
+ 2018-09-17 20:54:46 ('\x1b[38;5;1m', '\x1b[48;5;15m', '\x1b[0m') 192.168.0.103 - request served in 0:00:00.004240 miliseconds

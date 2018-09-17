@@ -5,7 +5,7 @@ from datetime import datetime
 
 my_app = flask.Flask(__name__)
 user_file = './logs/clients.txt'
-before = None
+#before = None
 
 
 def create_directory(directory_name):
@@ -29,7 +29,7 @@ def write_page_to_file():
         file.write(response.text)
 
 
-def write_user_to_log(ip):
+""" def write_user_to_log(ip):
     create_directory("logs")
 
     if (os.path.isfile(user_file)):
@@ -38,13 +38,15 @@ def write_user_to_log(ip):
         attr = 'w'
 
     with open(user_file, attr, encoding='utf-8') as file:
-        file.write(f'{ip}')
+        file.write(f'{ip}') """
 
 
 @my_app.before_request
 def start_timer():
-    global before
-    before = datetime.now()
+    #global before
+    #before = datetime.now()
+    # Sætter datetime på request objektet som before property
+    flask.request.before = datetime.now()
 
 
 @my_app.route('/')
@@ -55,11 +57,11 @@ def render_page():
 
 @my_app.after_request
 def per_request_timer(response):
-    global before
+    #global before
     after = datetime.now()
-    serve_time = after - before
+    serve_time = after - flask.request.before
 
-    timestamp = str(after)
+    timestamp = after.replace(microsecond=0)
 
     with open(user_file, 'a', encoding='utf-8') as file:
         file.write(
