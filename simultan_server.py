@@ -29,18 +29,6 @@ def write_page_to_file():
         file.write(response.text)
 
 
-""" def write_user_to_log(ip):
-    create_directory("logs")
-
-    if (os.path.isfile(user_file)):
-        attr = 'a'
-    else:
-        attr = 'w'
-
-    with open(user_file, attr, encoding='utf-8') as file:
-        file.write(f'{ip}') """
-
-
 @my_app.before_request
 def start_timer():
     #global before
@@ -65,7 +53,7 @@ def per_request_timer(response):
 
     with open(user_file, 'a', encoding='utf-8') as file:
         file.write(
-            f' {timestamp} {flask.request.remote_addr} - request served in {serve_time} miliseconds\n')
+            f' {timestamp},{flask.request.remote_addr},{serve_time}\n')
 
     return response
 
