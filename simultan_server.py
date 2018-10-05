@@ -2,11 +2,16 @@ import flask
 import requests
 import os
 from datetime import datetime
-from flask import request
+from time import sleep
+from datetime import timedelta
+from random import randint
+
+#  from flask import request
 
 my_app = flask.Flask(__name__)
 user_file = './logs/clients.txt'
 #before = None
+
 
 
 def create_directory(directory_name):
@@ -38,22 +43,27 @@ def start_timer():
     flask.request.before = datetime.now()
 
 
+@my_app.route('/<fname>')
+def render_page(fname):
+    flask.request.logging = False 
+    return ""
+
 @my_app.route('/')
-def render_page():  
-    # write_user_to_log(flask.request.remote_addr)   
-        return flask.render_template('hackernews.html')
+def render_page2():
+    flask.request.logging = True
+    sleep(1)
+    return flask.render_template('hackernews.html')
 
 @my_app.after_request
 def per_request_timer(response):
-    #global before
     after = datetime.now()
-    serve_time = after - flask.request.before
+    serve_time = after - flask.request.before    
+    timestamp = datetime.now().replace(microsecond=0)
 
-    timestamp = after.replace(microsecond=0)
-
-    with open(user_file, 'a', encoding='utf-8') as file:
-        file.write(
-            f' {timestamp},{flask.request.remote_addr},{serve_time}\n')
+    if flask.request.logging:
+            with open(user_file, 'a', encoding='utf-8') as file:
+                file.write(
+                f' {timestamp}, {flask.request.remote_addr}, {serve_time.microseconds}\n')
 
     return response
 
