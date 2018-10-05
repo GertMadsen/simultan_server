@@ -2,6 +2,7 @@ import flask
 import requests
 import os
 from datetime import datetime
+from flask import request
 
 my_app = flask.Flask(__name__)
 user_file = './logs/clients.txt'
@@ -38,10 +39,9 @@ def start_timer():
 
 
 @my_app.route('/')
-def render_page():
-    # write_user_to_log(flask.request.remote_addr)
-    return flask.render_template('hackernews.html')
-
+def render_page():  
+    # write_user_to_log(flask.request.remote_addr)   
+        return flask.render_template('hackernews.html')
 
 @my_app.after_request
 def per_request_timer(response):
